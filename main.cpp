@@ -1,37 +1,18 @@
 /*
  * main.cpp
  *
- *  Created on: 2016年4月21日
+ *  Created on: 2016年5月5日
  *      Author: LeoBrilliant
  */
 
-#include <iostream>
-
-#include "header1.h"
-
-#include "UT/UT1.h"
-
-//#include "UnitTest/ChainHashTableTest.h"
-#include "ChainHashTableTest.h"
-
-using namespace std;
+#include "MmapTest.h"
+#include "ReflectionTest.h"
 
 int main()
 {
-	cout << "Test Project!" << endl;
-
-	C1 c1;
-	c1.C1F1();
-	c1.C1F2();
-
-	UTC1 uc1;
-	uc1.test1();
-	uc1.test2();
-	uc1.test3();
-
-	ChainHashTableTest<int> chtt;
-	//chtt.ContructorTest();
+	ReflectionTest();
+//	mmap_test();
+	return 0;
 }
-
 
 
