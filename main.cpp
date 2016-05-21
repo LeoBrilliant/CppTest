@@ -8,10 +8,12 @@
 #include "MmapTest.h"
 #include "ReflectionTest.h"
 #include "JsonTest.h"
+#include "ChronoTest.h"
 
 int main()
 {
-	JsonTest();
+	TimePointTest();
+//	JsonTest();
 //	ReflectionTest();
 //	mmap_test();
 	return 0;
