@@ -7,10 +7,12 @@
 
 #include "MmapTest.h"
 #include "ReflectionTest.h"
+#include "JsonTest.h"
 
 int main()
 {
-	ReflectionTest();
+	JsonTest();
+//	ReflectionTest();
 //	mmap_test();
 	return 0;
 }
