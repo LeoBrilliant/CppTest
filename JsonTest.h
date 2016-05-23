@@ -47,4 +47,40 @@ void JsonTest()
 	std::cout << json_object["age"] << std::endl;
 }
 
+void AnotherJsonTest()
+{
+	Json::Value json_temp;
+	json_temp["name"] = Json::Value("LeoBrilliant");
+	json_temp["age"] = Json::Value(31);
+
+	Json::Value root;
+	root["key_string"] = Json::Value("value_string");
+	root["key_number"] = Json::Value(12345);
+
+	using namespace Json;
+
+	root["key_boolean"] = Value(false);
+	root["key_double"] = Value(3.1415926);
+	root["key_object"] = json_temp;
+	root["key_array"].append("array_string");
+	root["key_array"].append(2016);
+
+	ValueType type  = root.type();
+
+	StyledWriter styled_writer;
+	std::cout << styled_writer.write(root) << endl;
+
+	Reader reader;
+	Value json_object;
+	const char * json_document = "{\"age\":31, \"name\":\"Αυ±σ\"}"; //LeoBrilliant
+	if(!reader.parse(json_document, json_object))
+		cerr << "Json Parse Failed" << endl;
+
+	cout << json_object["name"] << endl;
+	cout << json_object["name"].asString() << endl;
+	cout << json_object["age"] << endl;
+
+	return;
+}
+
 #endif /* JSONTEST_H_ */
