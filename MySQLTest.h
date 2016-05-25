@@ -30,10 +30,10 @@ void MySqlTest()
 	MYSQL_RES * res;
 	MYSQL_ROW row;
 
-	char * host = "127.0.0.1";
-	char * user = "root";
-	char * password = "";
-	char * db = "mysql";
+	char  host[] = "127.0.0.1";
+	char  user[] = "root";
+	char password[] = "";
+	char db[] = "mysql";
 	unsigned int port = 3306;
 	char * unix_socket = NULL;
 	unsigned long client_flag = 0;

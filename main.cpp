@@ -10,6 +10,8 @@
 #include "JsonTest.h"
 #include "ChronoTest.h"
 #include "MySQLTest.h"
+#include "PrecompileTest.h"
+#include "CFunctionTest.h"
 
 #include <mysql.h>
 #include <stdio.h>
@@ -19,9 +21,8 @@
 
 int main()
 {
-	char s[10];
-	sprintf(s,"%s word", "hello");
-	std::cout << s << endl;
+	STRTest();
+//	SPrintfTest();
 //	MySqlTest();
 //	TimePointTest();
 //	JsonTest();

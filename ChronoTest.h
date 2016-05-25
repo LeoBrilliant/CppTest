@@ -34,7 +34,7 @@ void TimePointTest()
 
 	tm t = *localtime(&new_time);
 	time_t ticks = time(NULL);
-	tm t2 = *localtime(&ticks);
+	//tm t2 = *localtime(&ticks);
 	//cout << put_time(&t, "%c %Z") << endl;
 	cout << asctime(&t) << endl;
 	cout << asctime(&(*gmtime(&new_time))) << endl;
