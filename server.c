@@ -1,4 +1,4 @@
-
+#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -10,7 +10,7 @@
 #include <errno.h>
 #include <sys/un.h>
 
-int ServerTest(int argc, char * argv[])
+int server(int argc, char * argv[])
 {
     char name[] = "/home/user/opend";
     int fd, cfd;
@@ -53,7 +53,11 @@ int ServerTest(int argc, char * argv[])
         memset(&uc, 0, sizeof(uc));
         len = sizeof(uc);
         cfd = accept(fd, (struct sockaddr *)&uc, &len);
-
+        if(cfd < 0)
+        {
+        	printf("accept failed: %d, %s\n", errno, strerror(errno));
+        	return errno;
+        }
 
 
 

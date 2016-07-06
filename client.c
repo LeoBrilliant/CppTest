@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -9,7 +10,7 @@
 #include <errno.h>
 #include <sys/un.h>
 
-int ClientTest(int argc, char * argv[])
+int main_c(int argc, char * argv[])
 {
     char name[] = "/var/tmp/client";
     char servername[] = "/home/user/opend";

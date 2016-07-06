@@ -13,15 +13,13 @@
 #include "PrecompileTest.h"
 #include "CFunctionTest.h"
 
-#include <mysql.h>
-#include <stdio.h>
-#include <errno.h>
-#include <string.h>
+#include "ThreadTest.h"
 
 
 int main()
 {
-	STRTest();
+	ThreadTest();
+//	STRTest();
 //	SPrintfTest();
 //	MySqlTest();
 //	TimePointTest();
