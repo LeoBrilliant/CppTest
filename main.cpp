@@ -14,11 +14,13 @@
 #include "CFunctionTest.h"
 
 #include "ThreadTest.h"
+#include "ZmqTest.h"
 
 
 int main()
 {
-	ThreadTest();
+	ZmqTest();
+//	ThreadTest();
 //	STRTest();
 //	SPrintfTest();
 //	MySqlTest();
