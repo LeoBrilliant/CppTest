@@ -53,8 +53,9 @@
 									<listOptionValue builtIn="false" value="&quot;/usr/local/lib/&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\cygwin64\lib&quot;"/>
 								</option>
-								<option id="gnu.cpp.link.option.libs.1182678719" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+								<option id="gnu.cpp.link.option.libs.1182678719" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
 									<listOptionValue builtIn="false" value="mysqlclient"/>
+									<listOptionValue builtIn="false" value="log4cplus"/>
 									<listOptionValue builtIn="false" value="zmq"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.899227021" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
