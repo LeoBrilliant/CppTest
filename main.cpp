@@ -16,10 +16,15 @@
 #include "ThreadTest.h"
 #include "ZmqTest.h"
 
+#include "Log4CPlusTest.h"
+
 
 int main()
 {
-	ZmqTest();
+//	Log4CPlusTest();
+//	Log4CPlusTestLogFile();
+	Log4CPlusTestLogLog();
+//	ZmqTest();
 //	ThreadTest();
 //	STRTest();
 //	SPrintfTest();
