@@ -92,6 +92,22 @@ public:
 
 int StaticIntAndInt::si = 0;
 
+// 不允许使用void数组
+//void p[10];
+bool ba[10];
+char ca[10];
+int ia[10];
+
+void * vp;
+bool * bp;
+char * cp;
+int * ip;
+
+int & ir = i;
+int & iar = (int &)ia;
+const int & ipr = (int &)ip;
+
+
 void SizeOfTest()
 {
     SizeOf(b);
@@ -141,4 +157,34 @@ void SizeOfTest()
     StaticIntAndInt siai;
     SizeOf(si);
     SizeOf(siai);
+
+    SizeOf(ba);
+    SizeOf(ca);
+    SizeOf(ia);
+    cout << typeid(ba).name() << ":\t" << sizeof(ba) << endl;
+    cout << typeid(ca).name() << ":\t" << sizeof(ca) << endl;
+    cout << typeid(ia).name() << ":\t" << sizeof(ia) << endl;
+
+    SizeOf(vp);
+    SizeOf(bp);
+    SizeOf(cp);
+    SizeOf(ip);
+    cout << typeid(vp).name() << ":\t" << sizeof(vp) << endl;
+    cout << typeid(bp).name() << ":\t" << sizeof(bp) << endl;
+    cout << typeid(cp).name() << ":\t" << sizeof(cp) << endl;
+    cout << typeid(ip).name() << ":\t" << sizeof(ip) << endl;
+
+    vp = malloc(100);
+
+    SizeOf(vp);
+    cout << typeid(vp).name() << ":\t" << sizeof(vp) << endl;
+
+    SizeOf(ir);
+    cout << typeid(ir).name() << ":\t" << sizeof(ir) << endl;
+
+    SizeOf(iar);
+    cout << typeid(iar).name() << ":\t" << sizeof(iar) << endl;
+
+    SizeOf(ipr);
+    cout << typeid(ipr).name() << ":\t" << sizeof(ipr) << endl;
 }
