@@ -1,7 +1,7 @@
 /*
  * Log4CPlusTest.h
  *
- *  Created on: 2016Äê8ÔÂ14ÈÕ
+ *  Created on: 2016ï¿½ï¿½8ï¿½ï¿½14ï¿½ï¿½
  *      Author: LeoBrilliant
  */
 
@@ -39,7 +39,7 @@ void Log4CPlusTest()
 	Logger logger = Logger::getInstance(LOG4CPLUS_TEXT("test"));
 
 	logger.addAppender(appender);
-
+	//logge
 	logger.setLogLevel(ALL_LOG_LEVEL);
 
 	LOG4CPLUS_DEBUG(logger, "This is the first log Message...");

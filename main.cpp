@@ -1,7 +1,7 @@
 /*
  * main.cpp
  *
- *  Created on: 2016Äê5ÔÂ5ÈÕ
+ *  Created on: 2016ï¿½ï¿½5ï¿½ï¿½5ï¿½ï¿½
  *      Author: LeoBrilliant
  */
 
@@ -18,12 +18,14 @@
 
 #include "Log4CPlusTest.h"
 
+extern void SizeOfTest();
 
 int main()
 {
+	SizeOfTest();
 //	Log4CPlusTest();
 //	Log4CPlusTestLogFile();
-	Log4CPlusTestLogLog();
+//	Log4CPlusTestLogLog();
 //	ZmqTest();
 //	ThreadTest();
 //	STRTest();
