@@ -1,5 +1,6 @@
 #include <iostream>
 #include <typeinfo>
+#include <cstdlib>
 
 using namespace std;
 
@@ -92,8 +93,10 @@ public:
 
 int StaticIntAndInt::si = 0;
 
-// ������ʹ��void����
+// 不能定义void类型的数组
 //void p[10];
+// 也不能定义void类型的变量
+// void v;
 bool ba[10];
 char ca[10];
 int ia[10];
