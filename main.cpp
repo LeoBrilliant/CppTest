@@ -17,12 +17,18 @@
 #include "ZmqTest.h"
 
 #include "Log4CPlusTest.h"
+#include "ThreeWorkers.h"
 
-extern void SizeOfTest();
+void SizeOfTest();
+
+
+//void ThreeWorkerTest();
 
 int main()
 {
-	SizeOfTest();
+	//使用命名空间的方式解决变量名冲突问题
+	ThreeWorker::ThreeWorkerTest();
+//	SizeOfTest();
 //	Log4CPlusTest();
 //	Log4CPlusTestLogFile();
 //	Log4CPlusTestLogLog();
