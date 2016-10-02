@@ -21,13 +21,14 @@
 
 void SizeOfTest();
 
-
+void ListTest();
 //void ThreeWorkerTest();
 
 int main()
 {
+	ListTest();
 	//使用命名空间的方式解决变量名冲突问题
-	ThreeWorker::ThreeWorkerTest();
+//	ThreeWorker::ThreeWorkerTest();
 //	SizeOfTest();
 //	Log4CPlusTest();
 //	Log4CPlusTestLogFile();
