@@ -1,0 +1,12 @@
+
+# syntax: glob
+*.txt
+
+# syntax: regexp
+*.lua
+.settings/*
+# .*\project$
+Debug/*
+*.pyc
+.hg/*
+.hgignore
