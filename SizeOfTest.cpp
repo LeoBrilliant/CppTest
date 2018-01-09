@@ -252,5 +252,6 @@ void SizeOfTest()
     SizeOf(ipr);
     cout << typeid(ipr).name() << ":\t" << sizeof(ipr) << endl;
 
-	SizeOf(TestClass1);
+    TestClass1 tc1;
+	SizeOf(tc1);
 }
