@@ -74,6 +74,7 @@ extern void GTestTest();
 extern void ConvertionTest();
 extern void PropertyTreeTest();
 extern void SizeOfTest();
+extern void MetaProgrammingTest();
 
 //void ThreeWorkerTest();
 
@@ -116,8 +117,8 @@ int main()
 //    GTestTest();
 //    ConvertionTest();
 //    PropertyTreeTest();
-    SizeOfTest();
-
+//    SizeOfTest();
+    MetaProgrammingTest();
     LOG_INFO << "This is end of main. " << g_quit_test_of_sfitqd << bb::endl;
 
     return 0;
