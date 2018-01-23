@@ -16,7 +16,7 @@
 #include <boost/program_options.hpp>
 #include <boost/algorithm/string.hpp>
 #include <boost/foreach.hpp>
-#include <bb/core/CompactMsg.h>
+/*#include <bb/core/CompactMsg.h>
 #include <bb/core/compat.h>
 #include <bb/core/date.h>
 #include <bb/core/env.h>
@@ -94,5 +94,5 @@ void Test_make_time()
     t = make_time(s.c_str());
     cout << t << endl;
     LOG_INFO << t << bb::endl;
-}
+}*/
 

@@ -33,7 +33,7 @@ void StringStreamTest()
     ss2 << "This is test stream";
     ss2 << ss.str();
 
-    cout << ss2 << endl;
+//    cout << ss2 << endl;
     cout << ss2.str() << endl;
 
     ss.clear();
