@@ -18,15 +18,31 @@
 
 #include "Log4CPlusTest.h"
 #include "ThreeWorkers.h"
+#include "Factorial.h"
 
 void SizeOfTest();
 
 void ListTest();
 //void ThreeWorkerTest();
 
-int main()
+extern void LuaTest();
+
+extern void OperatorTest();
+
+void InheritanceTest();
+
+void VirtualInheritanceTest();
+
+// void GTestTutorial(int argc, char ** argv);
+
+void StrToFTest();
+
+int main(int argc, char ** argv)
 {
-	ListTest();
+//	OperatorTest();
+//	LuaTest();
+//	FactorialTest();
+	//ListTest();
 	//使用命名空间的方式解决变量名冲突问题
 //	ThreeWorker::ThreeWorkerTest();
 //	SizeOfTest();
@@ -42,6 +58,11 @@ int main()
 //	JsonTest();
 //	ReflectionTest();
 //	mmap_test();
+//	InheritanceTest();
+//	VirtualInheritanceTest();
+//	GTestTutorial(argc, argv);
+
+	StrToFTest();
 	return 0;
 }
 

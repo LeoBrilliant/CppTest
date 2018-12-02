@@ -10,6 +10,17 @@
 
 using namespace std;
 
+struct Node{
+	struct Node * parent;
+	struct Node * sibling;
+	struct Node * son;
+	int Volume;
+	int VolumeLeft;
+	bool visited;
+};
+
+typedef struct Node Node;
+
 
 void ListTest()
 {
@@ -22,6 +33,18 @@ void ListTest()
 
 	int i = li.front();
 
-	cout << li.front() << endl;
+	cout << i << endl;
+
+	Node * n = new Node;
+	n->Volume = i;
+	n->son = NULL;
+
+	list<Node*> ln;
+	ln.push_back(n);
+
+	Node * n2 = ln.front();
+
+	delete n2;
+
 }
 
