@@ -1,6 +1,15 @@
+/*
+ * SizeOfTest.cpp
+ *
+ *  Created on: Jan 9, 2018
+ *      Author: bliu
+ */
+
+
 #include <iostream>
 #include <typeinfo>
 #include <cstdlib>
+#include <stdint.h>
 
 using namespace std;
 
@@ -110,6 +119,20 @@ int & ir = i;
 int & iar = (int &)ia;
 const int & ipr = (int &)ip;
 
+
+class TestClass1
+{
+    int i1;
+    uint32_t ui1;
+    char c1;
+public:
+    char ca1[10];
+
+    void Function()
+    {
+
+    }
+};
 
 void SizeOfTest()
 {
@@ -228,4 +251,7 @@ void SizeOfTest()
 
     SizeOf(ipr);
     cout << typeid(ipr).name() << ":\t" << sizeof(ipr) << endl;
+
+    TestClass1 tc1;
+	SizeOf(tc1);
 }

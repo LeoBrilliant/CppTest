@@ -64,6 +64,7 @@ void TildeTest()
 	OUTPUT(~j);
 
 	int k = ~j;
+//	int k = 1;
 	OUTPUT(k);
 	OUTPUT(~k);
 
@@ -89,6 +90,25 @@ void TildeTest()
 	int p = -1;
 	OUTPUT(p);
 	OUTPUT(~p);
+	
+	//    enum Dir {S = 0, B = 1};
+
+    enum Dir {S, B };
+    Dir d = S;
+
+    cout << d << endl;
+    OUTPUT(d);
+
+    OUTPUT(~d);
+
+    OUTPUT(!d);
+
+    double ad[2] = {1, 2};
+
+    cout << ad[~d] << endl;
+    //Dir d2 = ~d;
+
+    //OUTPUT(d2);
 }
 
 void OperatorTest()

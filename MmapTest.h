@@ -1,7 +1,7 @@
 /*
  * MmapTest.h
  *
- *  Created on: 2016Äê5ÔÂ8ÈÕ
+ *  Created on: 2016ï¿½ï¿½5ï¿½ï¿½8ï¿½ï¿½
  *      Author: LeoBrilliant
  */
 
@@ -13,6 +13,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <sys/stat.h>
 
 void mmap_test()
 {

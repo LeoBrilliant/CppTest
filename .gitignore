@@ -1,3 +1,15 @@
+
+# syntax: glob
+*.txt
+
+# syntax: regexp
+*.lua
+.settings/*
+# .*\project$
+Debug/*
+*.log
+*.pyc
+.hg/*
+.hgignore
+*.orig
 /Debug/
-/.settings
-/Test.log

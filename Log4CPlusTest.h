@@ -17,8 +17,9 @@
 #include <log4cplus/loggingmacros.h>
 #include <log4cplus/fileappender.h>
 #include <log4cplus/helpers/loglog.h>
+//#include <log4cplus/initializer.h>
 
-#include <tchar.h>
+//#include <tchar.h>
 //#include <log4cplus/helpers/sleep.h>
 
 using namespace log4cplus;
@@ -52,18 +53,20 @@ void Log4CPlusTest()
 }
 
 //Failed
-/*void Log4CPlusTestFile()
+void Log4CPlusTestFile()
 {
-	tstring file_name = _T("log.txt");
+//    tstring file_name = _T("log.txt");
+    tstring file_name = "log.txt";
 
-	initialize();
+	// log4cplus::initialize();
 
+    //Initializer initializer();
 	log4cplus::helpers::LogLog::getLogLog()->setInternalDebugging(true);
 
 	SharedAppenderPtr appender(new FileAppender((file_name)));
 	appender->setName(LOG4CPLUS_TEXT("MAIN"));
 	Logger::getRoot().addAppender(appender);
-	auto_ptr<Layout> pPatternLayout(new PatternLayout(_T("%d{%y/%m/%d %H:%M:%S} - %m [%l] %n")));
+	auto_ptr<Layout> pPatternLayout(new PatternLayout("%d{%y/%m/%d %H:%M:%S} - %m [%l] %n"));
 	appender->setLayout(pPatternLayout);
 
 	Logger root = Logger::getRoot();
@@ -71,11 +74,11 @@ void Log4CPlusTest()
 	root.setLogLevel(ALL_LOG_LEVEL);
 
 	LOG4CPLUS_TRACE(Logger::getRoot(), "ABC");
-}*/
+}
 
 void Log4CPlusTestLogFile()
 {
-	tstring file_name = _T("Test.log");
+	tstring file_name = "Test.log";
 	SharedAppenderPtr appender(new FileAppender(file_name));
 
 	appender->setName("logFileTest");
