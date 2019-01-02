@@ -1,8 +1,8 @@
 /*
  * main.cpp
  *
- *  Created on: May 2, 2017
- *      Author: bliu
+ *  Created on: 2016��5��5��
+ *      Author: LeoBrilliant
  */
 
 #include <iostream>
@@ -18,11 +18,30 @@
 #include "MySQLTest.h"
 #include "PrecompileTest.h"
 #include "CFunctionTest.h"
+
 #include "ThreadTest.h"
 #include "ZmqTest.h"
 
 #include "Log4CPlusTest.h"
 #include "ThreeWorkers.h"
+#include "Factorial.h"
+
+void SizeOfTest();
+
+void ListTest();
+//void ThreeWorkerTest();
+
+extern void LuaTest();
+
+extern void OperatorTest();
+
+void InheritanceTest();
+
+void VirtualInheritanceTest();
+
+// void GTestTutorial(int argc, char ** argv);
+
+void StrToFTest();
 
 using namespace std;
 
@@ -76,15 +95,18 @@ extern void PropertyTreeTest();
 extern void SizeOfTest();
 extern void TimeTest();
 extern void IntAndDoubleTest();
+extern void MetaProgrammingTest();
 
-//void ThreeWorkerTest();
-
-int main()
+int main(int argc, char ** argv)
 {
     cout << "This is C++ Test" << endl;
-
+//	OperatorTest();
+//	LuaTest();
+//	FactorialTest();
+	//ListTest();
     //使用命名空间的方式解决变量名冲突问题
 //	ThreeWorker::ThreeWorkerTest();
+//	SizeOfTest();
 //	Log4CPlusTest();
 //	Log4CPlusTestLogFile();
 //	Log4CPlusTestLogLog();
@@ -97,19 +119,19 @@ int main()
 //	JsonTest();
 //	ReflectionTest();
 //	mmap_test();
+//	InheritanceTest();
+//	VirtualInheritanceTest();
+//	GTestTutorial(argc, argv);
 
-//    Test_catch_signal();
+	StrToFTest();    
+//	MetaProgrammingTest();
+//	InheritanceTest();
+//	VirtualInheritanceTest();
+//	GTestTutorial(argc, argv);
 
-//    Test_make_time();
-//    StateMachineTest2();
-
-//    OperatorTest();
-//    StringStreamTest();
-
-//    ThreadTest();
-//    AsioTest();
-//    FusionTest();
-    OverloadTestCase();
+	StrToFTest();    
+//	MetaProgrammingTest();
+//    OverloadTestCase();
 //    SharedPtrTest();
 //    StaticVariableTest();
 //    PolymorphismTest();
@@ -118,11 +140,10 @@ int main()
 //    GTestTest();
 //    ConvertionTest();
 //    PropertyTreeTest();
-//    SizeOfTest();
-//    TimeTest();
+    SizeOfTest();
+
 //    IntAndDoubleTest();
     LOG_INFO << "This is end of main. " << g_quit_test_of_sfitqd << bb::endl;
-
     return 0;
 }
 

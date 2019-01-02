@@ -12,3 +12,4 @@ Debug/*
 .hg/*
 .hgignore
 *.orig
+/Debug/
