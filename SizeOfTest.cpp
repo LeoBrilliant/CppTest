@@ -123,7 +123,7 @@ const int & ipr = (int &)ip;
 class TestClass1
 {
     int i1;
-    uint32_t ui1;
+    uint64_t ui1;
     char c1;
 public:
     char ca1[10];
@@ -136,7 +136,7 @@ public:
 
 void SizeOfTest()
 {
-	//bool	1字节
+    //bool    1字节
     SizeOf(b);
     //char	1字节
     SizeOf(c);

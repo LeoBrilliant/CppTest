@@ -74,6 +74,8 @@ extern void GTestTest();
 extern void ConvertionTest();
 extern void PropertyTreeTest();
 extern void SizeOfTest();
+extern void TimeTest();
+extern void IntAndDoubleTest();
 
 //void ThreeWorkerTest();
 
@@ -81,7 +83,7 @@ int main()
 {
     cout << "This is C++ Test" << endl;
 
-	//使用命名空间的方式解决变量名冲突问题
+    //使用命名空间的方式解决变量名冲突问题
 //	ThreeWorker::ThreeWorkerTest();
 //	Log4CPlusTest();
 //	Log4CPlusTestLogFile();
@@ -107,7 +109,7 @@ int main()
 //    ThreadTest();
 //    AsioTest();
 //    FusionTest();
-//    OverloadTestCase();
+    OverloadTestCase();
 //    SharedPtrTest();
 //    StaticVariableTest();
 //    PolymorphismTest();
@@ -116,8 +118,9 @@ int main()
 //    GTestTest();
 //    ConvertionTest();
 //    PropertyTreeTest();
-    SizeOfTest();
-
+//    SizeOfTest();
+//    TimeTest();
+//    IntAndDoubleTest();
     LOG_INFO << "This is end of main. " << g_quit_test_of_sfitqd << bb::endl;
 
     return 0;

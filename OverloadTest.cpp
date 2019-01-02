@@ -37,6 +37,13 @@ public:
     }
 };
 
+class OverloadTest1
+{
+public:
+    void func(int = 0) { cout << __func__ << "int" << endl; }
+    void func(int & ir) { cout << __func__ << "int ref" << endl; }
+};
+
 void OverloadTestCase()
 {
 //    cout << &OverloadTest::handle << endl;
@@ -55,6 +62,9 @@ void OverloadTestCase()
     double d = 1.234;
     ActionHolder<double> ahd(&d);
     ahd(&olt);
+
+    OverloadTest1 olt1;
+    olt1.func(i);
 }
 
 
