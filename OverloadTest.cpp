@@ -64,7 +64,7 @@ void OverloadTestCase()
     ahd(&olt);
 
     OverloadTest1 olt1;
-    olt1.func(i);
+//    olt1.func(i);
 }
 
 

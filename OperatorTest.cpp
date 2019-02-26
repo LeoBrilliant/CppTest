@@ -93,8 +93,8 @@ void TildeTest()
 	
 	//    enum Dir {S = 0, B = 1};
 
-    enum Dir {S, B };
-    Dir d = S;
+    enum Dir {SELL, BUY };
+    Dir d = SELL;
 
     cout << d << endl;
     OUTPUT(d);
