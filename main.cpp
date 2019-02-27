@@ -75,6 +75,9 @@ void Test_catch_signal()
     while( !g_quit_test_of_sfitqd) { sleep(2); }
 }
 
+#define ExtDeclare( function ) \
+    extern void## #function ##()
+
 extern void Test_make_time();
 extern void StateMachineTest1();
 extern void StateMachineTest2();
@@ -96,6 +99,11 @@ extern void SizeOfTest();
 extern void TimeTest();
 extern void IntAndDoubleTest();
 extern void MetaProgrammingTest();
+extern void IterateOverTuple();
+extern void StaticTableGeneration();
+extern void ArrayTest();
+//ExtDeclare( FibonacciArray );
+extern void FibonacciArray();
 
 int main(int argc, char ** argv)
 {
@@ -123,13 +131,7 @@ int main(int argc, char ** argv)
 //	VirtualInheritanceTest();
 //	GTestTutorial(argc, argv);
 
-	StrToFTest();    
-//	MetaProgrammingTest();
-//	InheritanceTest();
-//	VirtualInheritanceTest();
-//	GTestTutorial(argc, argv);
-
-	StrToFTest();    
+//  StrToFTest();
 //	MetaProgrammingTest();
 //    OverloadTestCase();
 //    SharedPtrTest();
@@ -140,9 +142,12 @@ int main(int argc, char ** argv)
 //    GTestTest();
 //    ConvertionTest();
 //    PropertyTreeTest();
-    SizeOfTest();
-
+//    SizeOfTest();
 //    IntAndDoubleTest();
+//    IterateOverTuple();
+//    StaticTableGeneration();
+//    ArrayTest();
+    FibonacciArray();
     LOG_INFO << "This is end of main. " << g_quit_test_of_sfitqd << bb::endl;
     return 0;
 }
