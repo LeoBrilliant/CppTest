@@ -104,6 +104,7 @@ extern void StaticTableGeneration();
 extern void ArrayTest();
 //ExtDeclare( FibonacciArray );
 extern void FibonacciArray();
+extern void IntegralConstantTest();
 
 int main(int argc, char ** argv)
 {
@@ -147,7 +148,8 @@ int main(int argc, char ** argv)
 //    IterateOverTuple();
 //    StaticTableGeneration();
 //    ArrayTest();
-    FibonacciArray();
+//    FibonacciArray();
+    IntegralConstantTest();
     LOG_INFO << "This is end of main. " << g_quit_test_of_sfitqd << bb::endl;
     return 0;
 }
